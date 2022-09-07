@@ -1,25 +1,23 @@
-.titulo__bestSellers{
-    width: 100%;
-    display: flex;
-
-    padding-left: 20px;
-}
 
 .masVendidos{
     display: flex;
     align-items: center;
-    height: 500px;
-    background-color: yellow;
+    background-color: #ffff00;
+    padding-block: 50px;
+    width: 100%;
+    margin-right: 0px;
+
 }
 
-.productos_bestSellers{
+.titulo__bestSellers{
+    width: 100%;
     display: flex;
-
+    justify-content: center;
+    
+    
+    h1{
+        text-align: center;
+    }
+    
 }
 
-.productoB{
-    height: 100px;
-    background-color: white;
-    border: 1px solid black;
-
-}

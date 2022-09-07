@@ -5,8 +5,9 @@
 }
 
 .navbar{
-    height: 120px;
+    height: 200px;
     background-color: map-get($colores, nav);
+    border-bottom: 0.5px solid map-get($colores, titulo );
 }
 .navbar-nav{
     width: 80%;

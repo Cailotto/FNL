@@ -3,3 +3,24 @@
     border-radius: 5%;
     margin-left: 30px;
 }
+
+.logoF{
+    width: 300px;
+}
+
+.carouselI{
+    min-width: 280px;
+    width: 280px;
+    height: 280px;
+    transform: translateX(20px);
+
+}
+.carousel-item{
+    display:flex;
+    justify-content: center;
+}
+
+.carousel-inner{
+    display: flex;
+    width: 300px;
+}
