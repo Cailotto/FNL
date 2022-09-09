@@ -125,7 +125,7 @@ p {
     z-index: 1001;
     position: fixed;
     bottom: 50px;
-    right: 20px;
+    right: 40px;
     border-radius: 50%;
     transition: .3s;
 }
@@ -135,4 +135,21 @@ p {
     border-color: map-get($colores, nav);
     border: 8px solid;
 
+}
+
+.btnW {
+    width: 55px;
+    height: 55px;
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 1001;
+    position: fixed;
+    bottom: 110px;
+    right: 10px;
+    border-radius: 50%;
+    transition: .3s;
 }

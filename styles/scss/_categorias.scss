@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding-block: 50px;
+    padding-block: 150px;
     background-image: url(../recursos/triangulos.jpg);
 
     h2{
@@ -42,5 +42,10 @@
     }
 
 
+}
+
+.productoCat{
+    width: 150px;
+    height: 150px;
 }
 

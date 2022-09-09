@@ -116,9 +116,10 @@ body::-webkit-scrollbar-corner {
   display: flex;
   align-items: center;
   background-color: #ffff00;
-  padding-block: 50px;
+  padding-block: 80px;
   width: 100%;
   margin-right: 0px;
+  min-height: 400px;
 }
 
 .titulo__bestSellers {
@@ -138,6 +139,10 @@ body::-webkit-scrollbar-corner {
   justify-content: center;
   text-align: center;
   color: black;
+  max-height: 400px;
+}
+.itemC img {
+  height: 359px;
 }
 .itemC p {
   color: black;
@@ -177,14 +182,20 @@ body::-webkit-scrollbar-corner {
   height: 400px;
 }
 
+.producto {
+  width: 200px;
+  height: 250px;
+}
+
 .paginas {
   width: 100%;
-  height: 100px;
+  height: 300px;
   display: flex;
   justify-content: center;
   gap: 5px;
   font-weight: 500;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
+  padding-top: 50px;
   background-color: rgba(127, 213, 239, 0.062745098);
 }
 
@@ -296,7 +307,7 @@ p {
   z-index: 1001;
   position: fixed;
   bottom: 50px;
-  right: 20px;
+  right: 40px;
   border-radius: 50%;
   transition: 0.3s;
 }
@@ -305,6 +316,23 @@ p {
   background-color: #293849;
   border-color: #0f8db3;
   border: 8px solid;
+}
+
+.btnW {
+  width: 55px;
+  height: 55px;
+  background-color: darkgreen;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 1001;
+  position: fixed;
+  bottom: 110px;
+  right: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
 .medio {
@@ -346,6 +374,7 @@ p {
   font-weight: 700;
   font-family: "Anton", sans-serif;
   letter-spacing: 1.5px;
+  padding-block: 10px;
 }
 .medio__aside div .aside__foto {
   width: 200px;
@@ -389,25 +418,27 @@ p {
   box-shadow: inset 0px 0px 1000px 300px #293849, 0px 0px 30px 150px #293849;
 }
 .medio__propaganda .medio__borde .medio__negro {
-  width: 80%;
+  width: 100%;
   height: 500px;
   background-color: transparent;
-  padding-inline: 80px;
-  padding-block: 80px;
+  gap: 300px;
   display: flex;
 }
 
 .negro__producto {
-  width: 40%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+}
+.negro__producto .logo {
+  width: 600px;
+  margin-left: 60px;
 }
 
 .negro__formulario {
-  width: 60%;
+  width: 70%;
   color: white;
 }
 
@@ -418,7 +449,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  padding-block: 50px;
+  padding-block: 150px;
   background-image: url(../recursos/triangulos.jpg);
 }
 .categorias h2 {
@@ -449,4 +480,9 @@ p {
 .categorias .categoriasLista div {
   height: 150px;
   text-align: center;
+}
+
+.productoCat {
+  width: 150px;
+  height: 150px;
 }/*# sourceMappingURL=styles.css.map */
