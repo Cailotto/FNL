@@ -416,7 +416,7 @@ p {
   align-items: center;
   gap: 50px;
   padding-block: 50px;
-  background-color: rgba(127, 213, 239, 0.062745098);
+  background-image: url(../recursos/triangulos.jpg);
 }
 .categorias h2 {
   width: -webkit-fit-content;
