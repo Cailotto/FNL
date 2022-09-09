@@ -1,0 +1,43 @@
+.medio__propaganda{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 80px;
+
+    .medio__borde{
+        width: 90%;
+        padding-block: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0px 0px 300px 150px rgb(0, 0, 0);
+        
+        
+        
+    .medio__negro{
+        width: 80%;
+        height: 500px;
+        background-color: transparent;
+        padding-inline: 50px;
+        padding-block: 50px;
+        display: flex;
+    }
+
+    }
+
+}
+
+.negro__producto{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.negro__formulario{
+    width: 60%;
+    color: white;
+}

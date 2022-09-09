@@ -26,3 +26,24 @@
     line-height: auto;
     color: none;
 }
+body{
+    font-family: 'Anton', sans-serif;
+
+}
+
+body::-webkit-scrollbar {
+        background-color: transparent;
+        width: 10px;
+      }
+body::-webkit-scrollbar-thumb {
+        background-color: map-get($colores, titulo );
+        border-radius: 1px;
+        border: 0.25em rgba(128, 128, 128, 0.801);
+      }
+body::-webkit-scrollbar-corner {
+        display: none;
+      }
+
+
+
+

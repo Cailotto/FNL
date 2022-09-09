@@ -1,5 +1,5 @@
 .footer {
-    background-color: map-get($colores, titulo);
+    background-color: black;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -20,17 +20,20 @@
 }
 
 .redes1 {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     color: white;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 600;
     background-color: map-get($colores, redes);
     padding: 3px;
     border-radius: 50%;
     text-align: center;
+    
 
 }
+
+
 
 .footer__secciones {
     width: 100%;
@@ -38,25 +41,98 @@
     justify-content: space-around;
     align-items: center;
     padding-block: 50px;
+    margin-right: 0px;
+    
 
+    .atajos {
+        
+        background-color: rgba(255, 255, 255, 0.104);
+        height: 280px;
+        border-radius: 5px;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 10px;
+        padding-top: 20px;
+
+        
     h3 {
         color: white;
-        text-decoration: underline;
-        font-weight: 400;
         font-size: 20px;
+        padding: 10px;
+        width: 100%;
+        position: relative;
+        font-weight: 500;
+        white-space: nowrap;
+        font-family: 'Anton', sans-serif;
+
+    }
+
+    h3::before {
+        background-color: white;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        display: inline-block;
+        width: 30px;
+        height: 2px;
     }
 
     ul {
-        padding-left: 0px;
+        padding-left: 10px;
+
         li {
             list-style: none;
-            color: map-get($colores, redes );      
+            color: rgba(255, 255, 255, 0.801);
+            padding: 10px;
         }
     }
+    }
+
+
 }
 
-.mapa{
+p {
+    color: rgba(255, 255, 255, 0.801);
+    padding: 10px;
+}
+
+.mapaG {
     height: 200px;
     width: 100%;
-    background-color: map-get($colores, redes );   
+}
+
+
+
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    border-radius: 50%;
+    background-color: map-get($colores, nav);
+}
+
+
+
+.btnI {
+    width: 35px;
+    height: 35px;
+    background-color: map-get($colores, nav);
+    z-index: 1001;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.btnI:hover {
+    background-color: map-get($colores, titulo);
+    border-color: map-get($colores, nav);
+    border: 8px solid;
+
 }

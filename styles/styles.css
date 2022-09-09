@@ -26,14 +26,34 @@
   color: none;
 }
 
+body {
+  font-family: "Anton", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #293849;
+  border-radius: 1px;
+  border: 0.25em rgba(128, 128, 128, 0.801);
+}
+
+body::-webkit-scrollbar-corner {
+  display: none;
+}
+
 .logo {
-  width: 150px;
+  width: 200px;
   border-radius: 5%;
   margin-left: 30px;
 }
 
 .logoF {
   width: 300px;
+  border-radius: 5%;
 }
 
 .carouselI {
@@ -83,6 +103,15 @@
   align-items: center;
 }
 
+.fixed {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  background-color: #0f8db3;
+  z-index: 100;
+}
+
 .masVendidos {
   display: flex;
   align-items: center;
@@ -96,9 +125,22 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .titulo__bestSellers h1 {
   text-align: center;
+  font-family: "Anton", sans-serif;
+}
+
+.itemC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+.itemC p {
+  color: black;
 }
 
 .productos__subtitulo {
@@ -111,29 +153,42 @@
 .subtitulo {
   color: #293849;
   font-weight: 500;
+  position: relative;
+  line-height: 2;
+  font-family: "Anton", sans-serif;
+}
+
+.subtitulo::before {
+  background-color: #0f8db3;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 150px;
+  height: 2px;
+}
+
+.productosM {
+  padding-block: 3%;
 }
 
 .p-3 {
-  height: 150px;
+  height: 400px;
 }
 
 .paginas {
   width: 100%;
-  height: 50px;
+  height: 100px;
   display: flex;
   justify-content: center;
   gap: 5px;
-  margin-block: 30px;
   font-weight: 500;
-}
-
-.under {
-  color: blue;
-  text-decoration: underline;
+  padding-bottom: 50px;
+  background-color: rgba(127, 213, 239, 0.062745098);
 }
 
 .footer {
-  background-color: #293849;
+  background-color: black;
   padding-top: 50px;
   padding-bottom: 20px;
 }
@@ -154,12 +209,12 @@
 }
 
 .redes1 {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   color: white;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 600;
-  background-color: grey;
+  background-color: rgba(224, 218, 218, 0.3882352941);
   padding: 3px;
   border-radius: 50%;
   text-align: center;
@@ -171,23 +226,224 @@
   justify-content: space-around;
   align-items: center;
   padding-block: 50px;
+  margin-right: 0px;
 }
-.footer__secciones h3 {
+.footer__secciones .atajos {
+  background-color: rgba(255, 255, 255, 0.104);
+  height: 280px;
+  border-radius: 5px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+.footer__secciones .atajos h3 {
   color: white;
-  text-decoration: underline;
-  font-weight: 400;
   font-size: 20px;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  font-weight: 500;
+  white-space: nowrap;
+  font-family: "Anton", sans-serif;
 }
-.footer__secciones ul {
-  padding-left: 0px;
+.footer__secciones .atajos h3::before {
+  background-color: white;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 30px;
+  height: 2px;
 }
-.footer__secciones ul li {
+.footer__secciones .atajos ul {
+  padding-left: 10px;
+}
+.footer__secciones .atajos ul li {
   list-style: none;
-  color: grey;
+  color: rgba(255, 255, 255, 0.801);
+  padding: 10px;
 }
 
-.mapa {
+p {
+  color: rgba(255, 255, 255, 0.801);
+  padding: 10px;
+}
+
+.mapaG {
   height: 200px;
   width: 100%;
-  background-color: grey;
+}
+
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: #0f8db3;
+}
+
+.btnI {
+  width: 35px;
+  height: 35px;
+  background-color: #0f8db3;
+  z-index: 1001;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.btnI:hover {
+  background-color: #293849;
+  border-color: #0f8db3;
+  border: 8px solid;
+}
+
+.medio {
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 2;
+  grid-template-areas: "medio medio medio aside" "medio medio medio aside";
+  padding-block: 50px;
+  padding-inline: 3%;
+  gap: 20px;
+  background-color: rgba(127, 213, 239, 0.062745098);
+}
+
+.medio__productos {
+  grid-area: medio;
+}
+
+.medio__aside {
+  grid-area: aside;
+}
+.medio__aside div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  border-radius: 5%;
+}
+.medio__aside div h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  color: #293849;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1.5px;
+}
+.medio__aside div .aside__foto {
+  width: 200px;
+  padding-top: 50px;
+}
+.medio__aside div h5 {
+  color: white;
+}
+
+.modalB {
+  width: 100%;
+}
+.modalB .btn {
+  width: 100%;
+}
+
+.list-group {
+  width: 100%;
+}
+
+.item__aside {
+  display: flex;
+  flex-direction: row;
+}
+
+.medio__propaganda {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 80px;
+}
+.medio__propaganda .medio__borde {
+  width: 90%;
+  padding-block: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 0px 300px 150px rgb(0, 0, 0);
+}
+.medio__propaganda .medio__borde .medio__negro {
+  width: 80%;
+  height: 500px;
+  background-color: transparent;
+  padding-inline: 50px;
+  padding-block: 50px;
+  display: flex;
+}
+
+.negro__producto {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.negro__formulario {
+  width: 60%;
+  color: white;
+}
+
+.categorias {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-block: 50px;
+  background-color: rgba(127, 213, 239, 0.062745098);
+}
+.categorias h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  text-align: center;
+  position: relative;
+  line-height: 2;
+  color: #293849;
+  font-family: "Anton", sans-serif;
+}
+.categorias h2::before {
+  background-color: #0f8db3;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  display: inline-block;
+  width: 150px;
+  height: 2px;
+}
+.categorias .categoriasLista {
+  align-self: center;
+  width: 70%;
+}
+.categorias .categoriasLista div {
+  height: 150px;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

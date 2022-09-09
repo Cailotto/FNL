@@ -27,3 +27,11 @@
     padding-right: 20px;
     align-items: center;
 }
+
+.fixed{
+    width: 100%;
+    position: sticky;
+    top: 20px;
+    background-color: map-get($colores,nav );
+    z-index: 100;
+}
